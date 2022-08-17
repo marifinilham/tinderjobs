@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+header, footer {
+	height: 80px;
+}
+
+header .logo, footer .left {
+	float: left;
+	padding: 12px;
+}
+
+header .logo img {
+	width: 220px;
+}
+
+header .menu, footer .right {
+	float: right;
+}
+
+header .menu li {
+	font-size: 40px;
+}
+
+header .menu li, footer .right li {
+	list-style-type: none;
+	float: left;
+	padding: 10px;
+}
+
+footer {
+	border-top: 2px solid #5d5e5e;
+}
+
+#top {
+	min-height: 42vh;
+	background-color: #e5e5f7;
+	opacity: 0.8;
+	background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #444cf7 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #444cf755 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
+	font-family: 'Fredoka One', cursive;
+	text-align: center;
+	padding: 100px 0;
+	color: #fff;
+	-webkit-text-stroke: 2px #000;
+}
+
+#top h1 {
+	font-size: 8em;
+}
+
+#top p {
+	font-size: 3em;
+}
+
+#loker, #perusahaan {
+	margin: 10em 8em;
+	min-height: 50vh;
+}
+
+#loker h3, #perusahaan h3 {
+	margin-bottom: 18px;
+	font-size: 32px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #5d5e5e;
+}
+
+.job {
+	position: relative;
+	float: left;
+	width: 20%;
+	height: 12em;
+	border: 1px solid #000;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 5px;
+}
+
+.job .badan {
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+.job .kaki {
+	position: absolute;
+	bottom: 8px;
+	color: #5d5e5e;
+}
+
+.job img {
+	width: 100px;
+}
+
+.list img {
+	width: 100px;
+	margin: 5px;
+	padding: 5px;
+}
