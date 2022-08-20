@@ -11,3 +11,5 @@ tema: Portal Lowongan Kerja
 - [ ] animasi
 - [ ] responsive
 - [ ] improvisasi
+
+preview: https://angrypin.github.io/tinderjobs/
