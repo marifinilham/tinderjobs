@@ -10,8 +10,16 @@
 	margin: 0 auto;
 }
 
-header, footer {
+header {
 	height: 80px;
+	background-color: #003152;
+	color: #fff;
+} 
+
+footer {
+	height: 80px;
+	background-color: #003152;
+	color: #fff;
 }
 
 header .logo, footer .left {
@@ -23,18 +31,71 @@ header .logo img {
 	width: 220px;
 }
 
-header .menu, footer .right {
+header .menu {
+	float: left;
+	margin: 5px 0 0 20px;
+	align-items: center;
+	position: relative;
+	font-family: 'Fredoka One', cursive;
+	-webkit-text-stroke: 1px #000;
+	cursor: pointer; 
+} 
+
+.btn-menu:hover {
+	background-color: #03558b;
+}
+
+#btn-lg a {
+    font-size: 25px;
+	background-color: #3b5998;
+    color: white;
+    border: white 2px solid;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin-top: 10px;
+	-webkit-text-stroke: 1px #000;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+#btn-lg:hover {
+	background-color: #6385ce;
+}
+
+.btn-signup {
+	font-size: 23px;
+	padding: 20px 15px;
+	color: white;
+	background-color: #03558b;
+	border-radius: 5px;
+	display: inline-block;
+	-webkit-text-stroke: 1px #000;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	margin-top: 10px;
+}
+
+.btn-signup:hover {
+	background-color: #003152;
+}
+
+footer .right {
 	float: right;
 }
 
 header .menu li {
-	font-size: 40px;
+	font-size: 25px;
+	color: white
 }
 
 header .menu li, footer .right li {
 	list-style-type: none;
 	float: left;
-	padding: 10px;
+	padding: 20px;
 }
 
 footer {
@@ -43,12 +104,12 @@ footer {
 
 #top {
 	min-height: 42vh;
-	background-color: #e5e5f7;
+	background-image: url('../../latar4.png');
 	opacity: 0.8;
-	background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #444cf7 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #444cf755 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
 	font-family: 'Fredoka One', cursive;
 	text-align: center;
-	padding: 100px 0;
+	padding-top: 180px;
+	padding-bottom: 100px;
 	color: #fff;
 	-webkit-text-stroke: 2px #000;
 }
