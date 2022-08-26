@@ -229,10 +229,17 @@ footer hr {
 
 footer .row {
 	display: flex;
+	margin-bottom: 1em;
 }
 
 footer .column {
 	flex: auto;
+	text-align: center;
+	padding: 1em;
+}
+
+footer .column:nth-child(odd) {
+	border-right: 2px solid #fff;
 }
 
 footer h4 {
@@ -248,4 +255,8 @@ footer ul a {
 footer ul li {
 	list-style-type: none;
 	padding-bottom: 8px;
+}
+
+footer .copy {
+	text-align: center;
 }
