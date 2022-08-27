@@ -88,11 +88,6 @@ header .btn-menu.lg:hover {
 	-webkit-text-stroke: 2px #000;
 }
 
-/* #top .title {
-	opacity: 1;
-	-webkit-text-stroke: 2px #000;
-} */
-
 #top .title {
 	position: relative;
 }
@@ -100,11 +95,10 @@ header .btn-menu.lg:hover {
 #top .title span {
 	position: relative;
 	display: inline-block;
-	font-size: 8em;
+	font-size: 8rem;
 	font-weight: bold;
 	margin: 0 -3px;
 	animation: flip 2s infinite;
-	/* animation-timing-function: ease-in-out; */
 	animation-delay: calc(.2s * var(--i));
 }
 
@@ -123,7 +117,7 @@ header .btn-menu.lg:hover {
 }
 
 .btn-signup {
-	font-size: 23px;
+	font-size: 1.4rem;
 	padding: 20px 15px;
 	background-color: #03558b;
 	border-radius: 5px;
@@ -142,8 +136,6 @@ header .btn-menu.lg:hover {
 /* job-wrapper x company-wrapper */
 
 .main {
-	/* max-width: 1170px;
-	width: 100%; */
 	padding: 0 15px;
 	margin-top: 10em;
 }
@@ -151,7 +143,7 @@ header .btn-menu.lg:hover {
 .heading h3 {
 	text-align: center;
 	font-weight: bold;
-	font-size: 28px;
+	font-size: 2rem;
 	margin-bottom: 8px;
 }
 
@@ -177,6 +169,10 @@ header .btn-menu.lg:hover {
 
 .jobs, .companies {
 	display: flex;
+}
+
+.job, .company {
+	flex: auto;
 }
 
 /* job start */
@@ -276,8 +272,8 @@ footer .column {
 	padding: 1em;
 }
 
-footer .column:nth-child(odd) {
-	border-right: 2px solid #fff;
+footer .divider {
+	border-left: 2px solid #fff;
 }
 
 footer h4 {

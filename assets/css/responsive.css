@@ -1,0 +1,63 @@
+@media all and (max-width: 1000px) {
+	header .logo img {
+		width: 200px;
+	}
+
+	header .menu {
+		display: none;
+	}
+
+	.jobs, .companies, footer .row {
+		flex-wrap: wrap;
+	}
+
+	.job, .company {
+		width: 40%;
+	}
+
+	.company {
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 670px) {
+	header {
+		height: 50px;
+	}
+
+	header .logo img {
+		width: 110px;
+	}
+
+	#top {
+		-webkit-text-stroke-width: 1px;
+	}
+
+	#top .title span {
+		font-size: 3rem;
+	}
+
+	#top p {
+		font-size: 1rem;
+	}
+
+	.btn-signup {
+		font-size: .7rem;
+		padding: 10px 5px;
+		-webkit-text-stroke-width: .5px;
+	}
+
+	.jobs, .companies, footer .row {
+		flex-direction: column;
+	}
+
+	.job, .company {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.heading h3 {
+		font-size: 1.7rem;
+	}
+}
