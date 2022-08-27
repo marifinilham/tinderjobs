@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lucida+Grande&display=swap');
 
+:root {
+  --transition: 0.3s;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -24,7 +28,110 @@ body {
 
 /* Header */
 
-header {
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #003152;
+	color: #fff;
+	height: 80px;
+	padding: 1em;
+}
+
+.header .logo img {
+	width: 220px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu > li {
+	padding: 25px 0;
+	overflow: hidden;
+	font-size: 25px;
+}
+
+.menu .btn-menu {
+	color: #fff;
+	font-family: 'Fredoka One', cursive;
+	-webkit-text-stroke: 1px #000;
+	cursor: pointer;
+	padding: 20px;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: background-color .3s ease-in-out;
+}
+
+.menu .btn-menu:hover {
+	background-color: #03558b;
+}
+
+.menu .btn-menu.lg {
+	background-color: #3b5998;
+	border: 2px solid #fff;
+	padding: 12px 20px;
+	margin-left: 10px;
+}
+
+.menu .btn-menu.lg:hover {
+	background-color: #6385ce;
+}
+
+.burger {
+	display: none;
+	height: 100px;
+	width: 30px;
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#burger-toggle {
+	display: none;
+}
+
+.burger-btn, .burger-btn::before, .burger-btn::after {
+	display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.burger-btn::before {
+	content: "";
+	margin-top: -8px;
+}
+
+.burger-btn::after {
+	content: "";
+	margin-top: 8px;
+}
+
+#burger-toggle:checked + .burger .burger-btn::before {
+	margin-top: 0px;
+	transform: rotate(405deg);
+}
+
+#burger-toggle:checked + .burger .burger-btn {
+  background: rgba(255, 255, 255, 0);
+}
+
+#burger-toggle:checked + .burger .burger-btn::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+/* header {
 	height: 80px;
 	background-color: #003152;
 }
@@ -74,7 +181,7 @@ header .btn-menu.lg {
 
 header .btn-menu.lg:hover {
 	background-color: #6385ce;
-}
+} */
 
 /* top */
 #top {
@@ -194,7 +301,7 @@ header .btn-menu.lg:hover {
 	border-color: #03558b;
 }
 
-.job .header {
+.job .top {
 	margin-bottom: 1em;
 	position: absolute;
 	top: 0;
