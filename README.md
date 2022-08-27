@@ -8,8 +8,8 @@ tema: Portal Lowongan Kerja
 - [x] Bagian main
 - [x] bagian body
 - [x] footer
-- [ ] animasi
-- [ ] responsive
+- [x] animasi
+- [x] responsive
 - [ ] improvisasi
 
 preview: https://angrypin.github.io/tinderjobs/
