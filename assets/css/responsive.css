@@ -1,4 +1,8 @@
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1024px) {
+	#top {
+		background-image: url(../images/header/top-tablet.png);
+	}
+
 	.burger {
 		display: flex;
 	}
@@ -73,6 +77,10 @@
 }
 
 @media all and (max-width: 670px) {
+	#top {
+		background-image: url(../images/header/top-mobile.png);
+	}
+
 	.header {
 		height: 50px;
 	}

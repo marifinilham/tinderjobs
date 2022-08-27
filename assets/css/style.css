@@ -134,7 +134,7 @@ body {
 /* top */
 #top {
 	min-height: 42vh;
-	background-image: url('../images/latar4.png');
+	background: url(../images/header/top.png) no-repeat center fixed;
 	font-family: 'Fredoka One', cursive;
 	text-align: center;
 	padding-top: 180px;
