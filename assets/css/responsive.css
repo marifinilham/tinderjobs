@@ -99,6 +99,18 @@
 		border-width: .2px;
 	}
 
+	.menu .mode .check {
+		width: 2rem;
+		height: 1rem;
+	}
+
+	.menu .mode .check::before, .menu .mode .check::after {
+		width: .8rem;
+		height: .8rem;
+		top: 2px;
+		left: 2px;
+	}
+
 	#top {
 		-webkit-text-stroke-width: 1px;
 		background-image: url(../images/header/top-mobile.png);
