@@ -6,7 +6,7 @@ const activator = () => {
 	wrappers.forEach(wrapper => {
 		const el = $(wrapper);
 		let scrollTop = $(document).scrollTop();
-		let wrapperTop = el.offset().top;
+		let wrapperTop = parseInt(el.offset().top);
 
 		if (scrollTop >= wrapperTop) {
 			el.addClass('active');
