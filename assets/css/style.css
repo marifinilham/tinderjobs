@@ -3,13 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lucida+Grande&display=swap');
 
 :root {
-  --transition: 0.3s;
+	--transition: 0.3s;
 }
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	transition: background-color ease-in .5s,
+	border ease-in .5s,
+	-webkit-text-stroke ease-in .5s,
+	text-shadow ease-in .5s;
 }
 
 html {
@@ -56,7 +60,7 @@ body {
 	padding: 0;
 }
 
-.menu > li {
+.menu>li {
 	padding: 25px 0;
 	overflow: hidden;
 	font-size: 25px;
@@ -88,6 +92,55 @@ body {
 	background-color: #6385ce;
 }
 
+.menu .mode input {
+	-webkit-appearance: none;
+	visibility: hidden;
+	display: none;
+}
+
+.menu .mode .check {
+	position: relative;
+	display: block;
+	width: 4rem;
+	height: 2rem;
+	background-color: #3b5998;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: ease-in .5s;
+}
+
+.menu .mode input:checked ~ .check {
+	background-color: #007eff;
+}
+
+.menu .mode .check::before, .menu .mode .check::after {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	transition: .5s;
+}
+
+.menu .mode .check::before {
+	background-color: #fff;
+}
+
+.menu .mode .check::after {
+	background-color: #092c3e;
+	transform: translateX(60px);
+}
+
+.menu .mode input:checked ~ .check::before {
+	transform: translateX(-60px);
+}
+
+.menu .mode input:checked ~ .check::after {
+	transform: translateX(0px);
+}
+
 .burger {
 	display: none;
 	height: 100px;
@@ -102,14 +155,16 @@ body {
 	display: none;
 }
 
-.burger-btn, .burger-btn::before, .burger-btn::after {
+.burger-btn,
+.burger-btn::before,
+.burger-btn::after {
 	display: block;
-  background-color: #fff;
-  position: absolute;
-  height: 2px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
+	background-color: #fff;
+	position: absolute;
+	height: 2px;
+	width: 30px;
+	transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	border-radius: 2px;
 }
 
 .burger-btn::before {
@@ -122,18 +177,18 @@ body {
 	margin-top: 8px;
 }
 
-#burger-toggle:checked + .burger .burger-btn::before {
+#burger-toggle:checked+.burger .burger-btn::before {
 	margin-top: 0px;
 	transform: rotate(405deg);
 }
 
-#burger-toggle:checked + .burger .burger-btn {
-  background: rgba(255, 255, 255, 0);
+#burger-toggle:checked+.burger .burger-btn {
+	background: rgba(255, 255, 255, 0);
 }
 
-#burger-toggle:checked + .burger .burger-btn::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
+#burger-toggle:checked+.burger .burger-btn::after {
+	margin-top: 0px;
+	transform: rotate(-405deg);
 }
 
 /* top */
@@ -166,11 +221,15 @@ body {
 }
 
 @keyframes flip {
-	0%, 80% {
+
+	0%,
+	80% {
 		transform: rotateY(360deg);
 		color: #fff;
 	}
-	80%, 100% {
+
+	80%,
+	100% {
 		color: #003152;
 	}
 }
@@ -198,7 +257,8 @@ body {
 /* edit by hilman start - revisi *peace */
 /* job-wrapper x company-wrapper */
 
-#job-wrapper, #company-wrapper {
+#job-wrapper,
+#company-wrapper {
 	margin-top: -15px;
 	padding-top: 10px;
 	margin-bottom: 20em;
@@ -232,11 +292,13 @@ body {
 	visibility: visible;
 }
 
-.jobs, .companies {
+.jobs,
+.companies {
 	display: flex;
 }
 
-.job, .company {
+.job,
+.company {
 	flex: auto;
 }
 

@@ -7,13 +7,8 @@
 	<meta name="description" content="TinderJobs - Perfect job match for you!">
 	<meta name="copyright" content="TinderJobs">
 	<title>TinderJobs</title>
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/responsive.css">
-	<link rel="stylesheet" href="assets/css/dark.css">
-
-	<script src="https://code.jquery.com/jquery-3.6.1.min.js"
-		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-	<script src="assets/js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
 
 <body>
@@ -26,7 +21,12 @@
 			<div class="burger-btn"></div>
 		</label>
 		<ul class="menu">
-			<li><a href="#" class="btn-menu">Beranda</a></li>
+			<li>
+				<label class="mode">
+					<input type="checkbox">
+					<span class="check"></span>
+				</label>
+			</li>
 			<li><a href="#job-wrapper" class="btn-menu">Cari Lowongan Kerja</a></li>
 			<li><a class="btn-menu">Pasang Lowongan Kerja</a></li>
 			<li><a class="btn-menu">Tips Karir</a></li>
@@ -193,5 +193,7 @@
 		</div>
 	</footer>
 </body>
-
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
 </html>
