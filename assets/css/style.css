@@ -29,6 +29,10 @@ body {
 /* Header */
 
 .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -36,6 +40,7 @@ body {
 	background-color: #003152;
 	color: #fff;
 	height: 80px;
+	width: 100%;
 	padding: 1em;
 }
 
@@ -133,12 +138,15 @@ body {
 
 /* top */
 #top {
-	min-height: 42vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 70vh;
 	background: url(../images/header/top.png) no-repeat center fixed;
 	font-family: 'Fredoka One', cursive;
 	text-align: center;
-	padding-top: 180px;
-	padding-bottom: 100px;
+	margin-top: 80px;
 	color: #fff;
 	-webkit-text-stroke: 2px #000;
 }

@@ -1,8 +1,4 @@
 @media all and (max-width: 1024px) {
-	#top {
-		background-image: url(../images/header/top-tablet.png);
-	}
-
 	.burger {
 		display: flex;
 	}
@@ -52,12 +48,8 @@
 		margin: 0;
 	}
 
-	header .logo img {
-		width: 200px;
-	}
-
-	header .menu {
-		display: none;
+	#top {
+		background-image: url(../images/header/top-tablet.png);
 	}
 
 	.jobs,
@@ -77,10 +69,6 @@
 }
 
 @media all and (max-width: 670px) {
-	#top {
-		background-image: url(../images/header/top-mobile.png);
-	}
-
 	.header {
 		height: 50px;
 	}
@@ -113,6 +101,8 @@
 
 	#top {
 		-webkit-text-stroke-width: 1px;
+		background-image: url(../images/header/top-mobile.png);
+		margin-top: 50px;
 	}
 
 	#top .title span {
