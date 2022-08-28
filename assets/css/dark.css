@@ -1,0 +1,61 @@
+body {
+	background-color: #181a1b;
+	color: #fff;
+}
+
+.header, footer {
+	background-color: #005995;
+}
+
+.menu .btn-menu.lg:hover {
+	border-color: cyan;
+}
+
+.menu .btn-menu.lg, .menu .btn-menu:hover {
+	background-color: #007eff;
+}
+
+.menu .btn-menu.lg:hover {
+	background-color: #276abd;
+}
+
+#top {
+	-webkit-text-stroke-color: #276abd;
+}
+
+#top .title, #top p {
+	opacity: .8;
+	text-shadow: 0 0 10px #276abd;
+}
+
+#top .title span {
+	text-shadow: 0 0 20px #276abd, 0 0 10px #276abd, 0 0 5px #276abd;
+}
+
+.btn-signup {
+	background-color: rgba(3, 85, 139, .5);
+	border: 2px solid #007eff;
+}
+
+.heading h3 {
+	text-shadow: 0 0 5px #276abd;
+	-webkit-text-stroke: 1px #276abd;
+}
+
+.heading hr {
+	border-color: #007eff;
+	box-shadow: 0 0 8px #276abd;
+}
+
+.job:hover {
+	box-shadow: 0px 10px 20px #0098ff;
+	border-color: #00adff;
+}
+
+.job .top p.link {
+	color: #00adff;
+}
+
+.job .extra {
+	color: #73a2b9;
+}

@@ -221,6 +221,7 @@ body {
 	margin-right: auto;
 	margin-bottom: 25px;
 	border: 2px solid #000;
+	border-radius: 5px;
 	width: 0;
 	visibility: hidden;
 	transition: width .3s ease-in-out, visibility .3s;
@@ -259,9 +260,19 @@ body {
 }
 
 .job .top {
+	margin-top: 5px;
 	margin-bottom: 1em;
 	position: absolute;
 	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.job .logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 85px;
 }
 
 .job img {
@@ -269,7 +280,11 @@ body {
 	max-width: 160px;
 }
 
-.job .title {
+.job .top p {
+	padding-left: 15px;
+}
+
+.job .top p.link {
 	font-weight: 700;
 	color: #003152;
 }
@@ -283,7 +298,7 @@ body {
 }
 
 .job .extra {
-	color: rgb(110, 110, 110);
+	color: #6e6e6e;
 	position: absolute;
 	bottom: 0;
 	margin-bottom: 1em;
@@ -298,13 +313,19 @@ body {
 	margin: 5px;
 }
 
+.company .logo {
+	display: flex;
+	height: 125px;
+}
+
 .company img {
+	margin: auto;
 	max-height: 120px;
 	max-width: 250px;
 }
 
 .company h3 {
-	margin-top: -3px;
+	text-align: center;
 }
 
 
