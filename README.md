@@ -10,12 +10,13 @@ tema: Portal Lowongan Kerja
 - [x] footer
 - [x] animasi
 - [x] responsive
-- [ ] improvisasi
+- [x] improvisasi
 
 ## Referensi
 - [Semantic-UI](https://semantic-ui.com/) - layout, responsive
 - [Progate](https://progate.com) - layout, responsive
 - [Michel Maillard](https://codepen.io/hubpork) - [responsive menu](https://codepen.io/hubpork/pen/RwLqoQB)
+- [Online Tutorial](https://www.youtube.com/c/OnlineTutorials4Designers) - [custom checkbox](https://www.youtube.com/watch?v=_f036OpnuWo)
 
 ## Tim Project
 - [Henri]()
