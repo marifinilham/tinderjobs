@@ -1,6 +1,6 @@
 /* Global */
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lucida+Grande&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Josefin+Sans&family=Kanit&display=swap');
 
 :root {
 	--transition: 0.3s;
@@ -22,12 +22,17 @@ html {
 
 body {
 	overflow-x: hidden;
+	font-family: 'Josefin Sans', cursive;
 }
 
 .container {
 	margin: 0 auto;
 	max-width: 1170px;
 	width: 100%;
+}
+
+.heading h3, footer h4 {
+	font-family: Kanit, cursive;
 }
 
 /* Header */
