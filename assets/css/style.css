@@ -198,6 +198,12 @@ body {
 /* edit by hilman start - revisi *peace */
 /* job-wrapper x company-wrapper */
 
+#job-wrapper, #company-wrapper {
+	margin-top: -15px;
+	padding-top: 10px;
+	margin-bottom: 20em;
+}
+
 .main {
 	padding: 0 15px;
 	margin-top: 10em;
@@ -220,14 +226,9 @@ body {
 	transition: width .3s ease-in-out, visibility .3s;
 }
 
-.heading:hover > hr {
+.active .heading hr {
 	width: 200px;
 	visibility: visible;
-}
-
-#job-wrapper, #company-wrapper {
-	margin-top: -15px;
-	margin-bottom: 20em;
 }
 
 .jobs, .companies {
