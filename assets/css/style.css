@@ -1,6 +1,6 @@
 /* Global */
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Josefin+Sans&family=Kanit&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kanit&family=Oswald&display=swap');
 
 :root {
 	--transition: 0.3s;
@@ -11,9 +11,9 @@
 	padding: 0;
 	box-sizing: border-box;
 	transition: background-color ease-in .5s,
-	border ease-in .5s,
-	-webkit-text-stroke ease-in .5s,
-	text-shadow ease-in .5s;
+		border ease-in .5s,
+		-webkit-text-stroke ease-in .5s,
+		text-shadow ease-in .5s;
 }
 
 html {
@@ -31,7 +31,8 @@ body {
 	width: 100%;
 }
 
-.heading h3, footer h4 {
+.heading h3,
+footer h4 {
 	font-family: Kanit, cursive;
 }
 
@@ -114,11 +115,12 @@ body {
 	transition: ease-in .5s;
 }
 
-.menu .mode input:checked ~ .check {
+.menu .mode input:checked~.check {
 	background-color: #007eff;
 }
 
-.menu .mode .check::before, .menu .mode .check::after {
+.menu .mode .check::before,
+.menu .mode .check::after {
 	content: '';
 	position: absolute;
 	top: 4px;
@@ -138,11 +140,11 @@ body {
 	transform: translateX(60px);
 }
 
-.menu .mode input:checked ~ .check::before {
+.menu .mode input:checked~.check::before {
 	transform: translateX(-60px);
 }
 
-.menu .mode input:checked ~ .check::after {
+.menu .mode input:checked~.check::after {
 	transform: translateX(0px);
 }
 
